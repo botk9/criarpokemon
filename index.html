@@ -1,0 +1,86 @@
+<!DOCTYPE html><!--tipo do documento-->
+<html lang="pt-BR"><!--idioma-->
+    <head><!--cabeçalho do documento-->
+    <meta charset="UTF-8"><!--linguagem do teclado "ç"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--responsivo-ajusta o conteudo na tela adequadamente-->
+    <title>Pokédex</title><!--vai na aba do navegador-->
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="img/pokebola.png" type="image/x-icon">
+ </head>
+ <body><!--corpo do site-->
+   <center><img src="img/traced-pokemon-logo.png" alt="logo pokemon" width="25%" height="25%"></center>
+  <h1><b>Quem é esse pokemon</b></h1> 
+   <form><!--para o usuario preencher :)-->
+      <fieldset>
+         <legend><h2>Caracteristicas do pokemon</h2></legend>
+         <label for="nome">Nome do pokemon</label>
+         <input type="text" id="nome" name="nome" required>
+         <br><br>
+         <label for="genero">Gênero</label>
+         <select name="genero" id="genero" required><!--grupo do gênero-->
+          <option value="" disabled selected></option>
+          <option value="male">Masculino</option>
+          <option value="fem">Feminino</option>
+          <option value="des">Desconhecido</option>
+         </select>
+        <br><br>
+       <label for="altura">Altura (cm)</label><!--altura do pokemon-->
+       <input type="number" id="altura" name="altura" min="0" max="10000" required>
+       <br><br>
+       <label for="tipo">1º tipo</label>
+       <select name="tipo" id="tipo" required><!--1º tipo do pokemon-->
+        <option value="" disabled selected></option>
+        <option value="Normal">Normal</option>
+        <option value="Fogo ">Fogo </option>
+        <option value="Água">Água</option>
+        <option value="Grama">Grama</option>
+        <option value="Voador">Voador</option>
+        <option value="Luta">Luta</option>
+        <option value="Veneno">Veneno</option>
+        <option value="Elétrico">Elétrico</option>
+        <option value="Terra">Terra</option>
+        <option value="Pedra">Pedra</option>
+        <option value="Psíquico">Psíquico</option>
+        <option value="Gelo">Gelo</option>
+        <option value="Inseto">Inseto</option>
+        <option value="Fantasma">Fantasma</option>
+        <option value="Aço">Aço</option>
+        <option value="Dragão">Dragão</option>
+        <option value="Dark">Dark</option>
+        <option value="Fada">Fada</option>
+       </select>
+       <br><br>
+       <label for="tipo">2º tipo (opicional)</label><!--2º tipo do pokemon-->
+       <select name="tipo" id="tipo">
+        <option value="" disabled selected></option>
+        <option value="Normal">Normal</option>
+        <option value="Fogo ">Fogo </option>
+        <option value="Água">Água</option>
+        <option value="Grama">Grama</option>
+        <option value="fly">Fly</option>
+        <option value="Luta">Luta</option>
+        <option value="Veneno">Veneno</option>
+        <option value="Elétrico">Elétrico</option>
+        <option value="Terra">Terra</option>
+        <option value="Pedra">Pedra</option>
+        <option value="Psíquico">Psíquico</option>
+        <option value="Gelo">Gelo</option>
+        <option value="Inseto">Inseto</option>
+        <option value="Fantasma">Fantasma</option>
+        <option value="Aço">Aço</option>
+        <option value="Dragão">Dragão</option>
+        <option value="Dark">Dark</option>
+        <option value="Fada">Fada</option>
+       </select>
+       <br>
+       <br>
+       <label for="peso">Peso (Kg)</label><!--peso do pokemon-->
+       <input type="number" id="peso" name="peso" min="0" max="2000" required>
+       <br>
+       <br>
+       <br><br>
+       <center><input type="submit" value="Enviar"></center>
+      </fieldset>
+    </form>
+ </body>
+ </html>
